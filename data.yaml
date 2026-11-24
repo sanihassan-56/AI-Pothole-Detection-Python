@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 3
+names: ['cracks', 'patching', 'pothole']
+
+roboflow:
+  workspace: bc-projekt-rdd
+  project: road-defect-detection-ff7jh
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/bc-projekt-rdd/road-defect-detection-ff7jh/dataset/1
