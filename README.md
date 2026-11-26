@@ -92,10 +92,11 @@ pip install -r requirements.txt
 Run the desired Python detection script. For example:
 
 ```bash
-python test_picker.py
+python test_gen.py
 ```
 
 Other scripts are available for image, video, camera, and ONNX testing.
+
 
 ## Model Files
 
@@ -111,6 +112,30 @@ The exported `best.onnx` model was also integrated into a separate Android appli
 Android repository:
 
 https://github.com/sanihassan-56/AI-Pothole-Detector-Android
+
+## Prediction Results
+
+The YOLO26n model was evaluated using sample road images and video. The following examples show the detection results produced by the system.
+
+### Image-Based Detection Results
+
+![Prediction Result 1](runs/detect/outputs/predict/16.jpg)
+
+![Prediction Result 2](runs/detect/outputs/predict/18.jpg)
+
+![Prediction Result 3](runs/detect/outputs/predict/5.jpg)
+
+![Prediction Result 4](runs/detect/outputs/predict/7.jpg)
+
+### Latest Detection Result
+
+![Latest Prediction](runs/detect/outputs/predict/latest_result.jpg)
+
+### Video-Based Detection
+
+The system also supports pothole detection in video files and generates annotated video output.
+
+[Watch the annotated pothole detection video](runs/detect/outputs/predict/output_video.mp4)
 
 ## Developer
 
